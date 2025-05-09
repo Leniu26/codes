@@ -12,7 +12,6 @@
     <name>Sample Maven Project</name>
     <description>A simple Maven project for demonstration</description>
 
-    <!-- Repositories -->
     <repositories>
         <repository>
             <id>central</id>
@@ -20,7 +19,6 @@
         </repository>
     </repositories>
 
-    <!-- Plugin Repositories -->
     <pluginRepositories>
         <pluginRepository>
             <id>central</id>
@@ -28,7 +26,6 @@
         </pluginRepository>
     </pluginRepositories>
 
-    <!-- Dependencies -->
     <dependencies>
         <!-- Example Dependency: JUnit -->
         <dependency>
@@ -37,16 +34,8 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- Example Dependency: Vaadin -->
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-core</artifactId>
-            <version>14.8.5</version>
-        </dependency>
     </dependencies>
 
-    <!-- Plugins -->
     <build>
         <plugins>
             <!-- Maven Compiler Plugin -->
@@ -60,7 +49,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Surefire Plugin (For Running Tests) -->
+            <!-- Maven Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -68,5 +57,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
